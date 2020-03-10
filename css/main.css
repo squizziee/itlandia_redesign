@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+.main_section {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    overflow: hidden;
+}
+
+.main_section > .text,
+.main_section > .picture {
+    height: 100%;
+}
+
+.main_section > .text {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main_section > .text > .text_block {
+    width: 75%;
+}
+
+.main_section > .text > .text_block > .headline {
+    display: block;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.main_section > .text > .text_block > .main_text {
+    display: block;
+    color: rgba(255, 255, 255, .3);
+    font-family: ProximaNova;
+    font-size: 15px;
+    animation: fadeInLeft 2s ease-in-out;
+}
+
+.main_section > .text > .text_block > a {
+    position: relative;
+    margin-top: 30px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 3px solid #fff;
+    height: 55px;
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14.5px;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s color ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.main_section > .text > .text_block > a::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -1000%;
+    left: -50%;
+    width: 200%;
+    height: 1000%;
+    border-radius: 50%;
+    background: #fff;
+    transition: .5s top ease-in-out;
+}
+
+.main_section > .text > .text_block > a:hover::after {
+    top: -70%;
+}
+
+.main_section > .text > .text_block > a:hover {
+    color: #000;
+}
+
+.main_section > .picture {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_section > .picture > img {
+    height: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
