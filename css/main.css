@@ -107,3 +107,21 @@ body {
     height: 100%;
     animation: fadeIn 2s ease-in-out;
 }
+
+.social_btn_block {
+    position: absolute;
+    bottom: 0;
+    color: rgba(255, 255, 255, .15);
+    padding: 50px;
+}
+
+.social_btn_block > .social_btn {
+    margin-right: 50px;
+    cursor: pointer;
+    transition: .1s all ease-in-out;
+}
+
+.social_btn_block > .fa-vk:hover {
+    color: #4680C2;
+    text-shadow: 0 0 100px #4680C2;
+}
