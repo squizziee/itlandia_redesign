@@ -8,6 +8,7 @@ body {
 * {
     box-sizing: border-box;
     outline: none;
+    color: inherit;
 }
 
 .main_section {
@@ -113,15 +114,35 @@ body {
     bottom: 0;
     color: rgba(255, 255, 255, .15);
     padding: 50px;
+    display: flex;
 }
 
-.social_btn_block > .social_btn {
+.social_btn_block > .social_btn_wrapper {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
     margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7.5px;
     cursor: pointer;
-    transition: .1s all ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-.social_btn_block > .fa-vk:hover {
-    color: #4680C2;
-    text-shadow: 0 0 100px #4680C2;
+.social_btn_block > .social_btn_wrapper:hover {
+    background: #fff;
+    color: #000;
+}
+
+.social_btn_block > .social_btn_wrapper:active {
+    
+}
+
+.rubberBandAnimated {
+    animation: rubberBand 1s ease-in-out;
+}
+
+.social_btn_block > .social_btn_wrapper > .social_btn {
+    transition: .1s all ease-in-out;
 }
