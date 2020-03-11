@@ -109,6 +109,18 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
+.ghost_logo > embed {
+    width: 30px;
+}
+
+.ghost_logo {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    position: absolute;
+    opacity: .15;
+}
+
 .social_btn_block {
     position: absolute;
     bottom: 0;
@@ -133,10 +145,6 @@ body {
 .social_btn_block > .social_btn_wrapper:hover {
     background: #fff;
     color: #000;
-}
-
-.social_btn_block > .social_btn_wrapper:active {
-    
 }
 
 .rubberBandAnimated {
