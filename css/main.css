@@ -1,8 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background: #fff;
     user-select: none;
+    background: #222;
+    height: 200vh;
+}
+
+.wrapper {
+    background: #222;
 }
 
 * {
@@ -153,4 +158,90 @@ body {
 
 .social_btn_block > .social_btn_wrapper > .social_btn {
     transition: .1s all ease-in-out;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/1145390.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+    position: fixed;
+    top: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.navbar_option {
+    margin: 0 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s background ease-in-out, .2s box-shadow ease-in-out;
+}
+
+.navbar_option_icon {
+    box-shadow: 0 0 20px #fa453c;
+}
+
+.navbar_option[data-selection="selected"] {
+    background: #fa453c;
+}
+
+.navbar_option[data-selection="selected"] span,
+.navbar_option[data-selection="selected"] i {
+    color: #000;
+}
+
+.navbar_option > i {
+    color: #fff;
+    font-size: 15px;
+    padding: 0 12px .5px 12px;
+    transition: .2s color ease-in-out;
+}
+
+.navbar_option > span {
+    display: block;
+    padding: 0 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    transition: .2s color ease-in-out;
+}
+
+.navbar_option > span > i {
+    margin-right: 7.5px;
+    font-size: 16px;
+}
+
+.navbar_option:hover {
+    background: #fa453c;
+    box-shadow: 0 0 20px #fa453c;
+}
+
+.navbar_option:hover span,
+.navbar_option:hover i {
+    color: #000;
 }
