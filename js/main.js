@@ -11,8 +11,12 @@ $(".navbar_option").on("click", function() {
     $(this).toggleClass("navbar_option_active");
 });
 
-function delay (URL) {
-    setTimeout( function() { window.location = URL }, 1500 );
+function redirect(URL) {
+    window.location = URL;
+}
+
+function redirect(URL, delay) {
+    setTimeout( function() { window.location = URL }, delay );
 }
 
 var height = $('#header').height();
@@ -20,7 +24,9 @@ var height = $('#header').height();
 $(window).scroll(function() {
     if ($(this).scrollTop() > height) {
         $(".navbar").addClass("fixed");
+        $("#header").addClass("header_active_navbar");
     } else {
         $(".navbar").removeClass("fixed");
+        $("#header").removeClass("header_active_navbar");
     }
 });
