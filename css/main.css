@@ -336,6 +336,24 @@ header {
     background: #333;
 }
 
+.section_headline {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: #fa453c;
+}
+
+.keyword {
+    color: #fff;
+    background: #fa453c;
+    padding: 7.5px 15px;
+    border-radius: 2.5px;
+    margin-right: 5px;
+}
+
 .advantages {
     width: 100%;
     height: 400px;
